@@ -34,13 +34,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-|| Name    | Function | IP Address | Operating System  |
+| Name    | Function | IP Address | Operating System  |
 |---------|----------|------------|-------------------|
 | Jumpbox | Gateway  | 10.0.0.5   | Linux             |
 | ELK     | Monitor  | 10.2.0.4   | Linux             |
 | Web-1   | DVWA     | 10.0.0.6   | Linux             |
 | Web-2   | DVWA     | 10.0.0.7   | Linux             |
-| Web-3   | DVWA     | 10.0.0.8   | Linux             | |
+| Web-3   | DVWA     | 10.0.0.8   | Linux             |
 
 ### Access Policies
 
@@ -54,7 +54,7 @@ Machines within the network can only be accessed by _____.
 
 A summary of the access policies in place can be found in the table below.
 
-|| Name    | Publically Accessible | Allowed IP Addresses  |
+| Name    | Publically Accessible | Allowed IP Addresses  |
 |---------|-----------------------|-----------------------|
 | Jumpbox | Yes/SSH               | My Public IP Address  |
 | ELK     | Yes/HTTP              | My Public IP Address  |
