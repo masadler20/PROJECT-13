@@ -5,7 +5,7 @@ Automated ELK Stack Deployment - Azure
 
 The files in this repository were used to configure the network depicted below.
 
-![Diagram of Azure Virtual Network](Images/diagram_Azure_Virtual_Network_II.png)
+![Diagram of Azure Virtual Network](Images/diagram_filename.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
