@@ -9,10 +9,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  ![Filebeat Playbook](Ansible/filebeat-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -24,15 +24,20 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly stable, in addition to restricting traffic to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Load balancers address the "availability" aspect of the CIA information security model. They do so by receiving traffic that comes into a website and distributing  it across multiple servers. As websites receive more traffic, more servers can be added to the group or "pool."
+
+- A "Jumpbox" is similar to a gateway router that forces all traffic through a single node making it easier to secure and monitor each individual virtual machines ("VM") behind the gateway.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log and system files.
+
+- "Filebeat" will monitor the VM's by generating and organizing logfiles. It logs information about the file system and specifically provides details about which files have changed and when.
+
+-  "Metricbeat" is a tool that collects metrics or measurements about a system that give an administrator an indication of the systems overall health. Common metrics collected include CPU usage and uptime. .
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name    | Function | IP Address | Operating System  |
 |---------|----------|------------|-------------------|
@@ -46,11 +51,13 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet.
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+ 74.165.60.210
+
+Machines within the network can only be accessed by the Jump-Box fromt he following IP address:
+
+- 13.92.230.36
 
 A summary of the access policies in place can be found in the table below.
 
