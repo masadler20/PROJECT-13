@@ -64,7 +64,7 @@ A summary of the access policies in place can be found in the table below.
 | Name    | Publically Accessible | Allowed IP Addresses  |
 |---------|-----------------------|-----------------------|
 | Jumpbox | Yes/SSH               | My Public IP Address  |
-| ELK     | Yes/HTTP              | My Public IP Address  |
+| ELK     | Yes/HTTP              | 10.2.0.4              |
 | Web-1   | No                    | 10.0.0.5              |
 | Web-2   | No                    | 10.0.0.5              |
 | Web-3   | No                    | 10.0.0.5              |
@@ -87,13 +87,17 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web1: 10.0.0.6
+- Web2: 10.0.0.7
+- Web3: 10.0.0.8
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeats and Metricbeats_
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+- Filebeats: monitors system logs and events (See Kibana Exploration File)
+- Metricbeats: records system metrics and figures including, but limited to, CPU usage, uptime, etc. for the machines being monitored (in the case Web 1,2 and 3) (See Kibana Exploration File) 
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
