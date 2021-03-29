@@ -124,4 +124,6 @@ How do I specify which machine to install the ELK server on versus which to inst
 
 - Add the hosts name elk into the webserver group followed by the IP address for the ELK-SERVER in this case 10.2.0.4 /ansible/hosts.txt
 
-- Which URL do you navigate to in order to check that the ELK server is running?
+Which URL do you navigate to in order to check that the ELK server is running?
+
+- 13.92.230.36:5601/app/kibaba#/home
