@@ -71,7 +71,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because:
 
 - Ansible is an open-source software provisioning and configuration management software tool. Provisioners do everything from installing software to changing configuration files and has the advantage of avoiding multiple independent entries and accuracy/error avoidance.
 
