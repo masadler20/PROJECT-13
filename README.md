@@ -34,7 +34,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 - "Filebeat" will monitor the VM's by generating and organizing logfiles. It logs information about the file system and specifically provides details about which files have changed and when.
 
--  "Metricbeat" is a tool that collects metrics or measurements about a system that give an administrator an indication of the systems overall health. Common metrics collected include CPU usage and uptime. .
+-  "Metricbeat" is a tool that collects metrics or measurements about a system that give an administrator an indication of the systems overall health. Common metrics collected include CPU usage and uptime.
 
 The configuration details of each machine may be found below.
 
@@ -55,7 +55,7 @@ Only the Jump-Box machine can accept connections from the Internet. Access to th
 
  - 74.165.60.210
 
-Machines within the network can only be accessed by the Jump-Box fromt he following IP address:
+Machines within the network can only be accessed by the Jump-Box from the following IP address:
 
 -  13.92.230.36
 
@@ -93,7 +93,7 @@ This ELK server is configured to monitor the following machines:
 - Web3: 10.0.0.8
 
 We have installed the following Beats on these machines:
-- Filebeats and Metricbeats_
+- Filebeats and Metricbeats
 
 These Beats allow us to collect the following information from each machine:
 
