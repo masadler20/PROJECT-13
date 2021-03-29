@@ -87,6 +87,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+
 - Web1: 10.0.0.6
 - Web2: 10.0.0.7
 - Web3: 10.0.0.8
@@ -97,14 +98,14 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 
 - Filebeats: monitors system logs and events (See Kibana Exploration File)
-- Metricbeats: records system metrics and figures including, but limited to, CPU usage, uptime, etc. for the machines being monitored (in the case Web 1,2 and 3) (See Kibana Exploration File) 
+- Metricbeats: records system metrics and figures including, but limited to, CPU usage, uptime, etc. for the machines being monitored (in the case Web 1,2 and 3) (See Kibana Exploration File)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the Playbook file to /etc/ansible ($ cp /etc/ansible *.yml)
+- Update the hosts file to include each VM client IP address (10.0.0.6 10.0.0.7 10.0.0.8)
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
