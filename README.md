@@ -126,4 +126,4 @@ How do I specify which machine to install the ELK server on versus which to inst
 
 Which URL do you navigate to in order to check that the ELK server is running?
 
-- 13.92.230.36:5601/app/kibaba#/home
+- 13.92.230.36:5601/app/kibana#/home
