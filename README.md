@@ -65,9 +65,9 @@ A summary of the access policies in place can be found in the table below.
 |---------|-----------------------|-----------------------|
 | Jumpbox | Yes/SSH               | My Public IP Address  |
 | ELK     | Yes/HTTP              | 10.2.0.4              |
-| Web-1   | No                    | 10.0.0.5              |
-| Web-2   | No                    | 10.0.0.5              |
-| Web-3   | No                    | 10.0.0.5              |
+| Web-1   | No                    | 10.0.0.6              |
+| Web-2   | No                    | 10.0.0.7              |
+| Web-3   | No                    | 10.0.0.8              |
 
 ### Elk Configuration
 
